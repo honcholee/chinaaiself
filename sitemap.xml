@@ -17,7 +17,108 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/explore/tools/</loc>
+    <loc>https://honcho.cc.cd/wiki/why/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/manager/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/social/stats/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/social/update/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/think/articles</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/think/1111contributors</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/think/examples</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/think/releases</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/think/todo</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/think/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/settings/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/explore/explore/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -35,16 +136,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/explore/explore/index11</loc>
-    <lastmod>2026-06-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/explore/explore/</loc>
+    <loc>https://honcho.cc.cd/explore/tools/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -125,24 +217,6 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/stellar/articles</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/wiki/stellar/examples</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://honcho.cc.cd/friends/rss/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>daily</changefreq>
@@ -179,8 +253,8 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/stellar/contributors</loc>
-    <lastmod>2026-02-09</lastmod>
+    <loc>https://honcho.cc.cd/social/disclaimer/</loc>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -188,26 +262,8 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/stellar/</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/wiki/stellar/releases</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/wiki/stellar/todo</loc>
-    <lastmod>2026-02-09</lastmod>
+    <loc>https://honcho.cc.cd/social/policy/</loc>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
