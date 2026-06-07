@@ -17,6 +17,15 @@
   
   
   <url>
+    <loc>https://honcho.cc.cd/explore/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
     <loc>https://honcho.cc.cd/posts/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>daily</changefreq>
