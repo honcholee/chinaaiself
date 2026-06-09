@@ -1071,7 +1071,7 @@
                         return result;
                     };
                     
-                    const groupedData = groupByYear([["2022-12-24",1],["2025-03-30",2],["2025-06-06",1],["2025-06-07",2]]);
+                    const groupedData = groupByYear([["2022-12-25",1],["2025-03-30",2],["2025-06-06",1],["2025-06-07",2]]);
                     const years = Object.keys(groupedData).reverse();
                     
                     var initYear = parseInt(heatmapChartDom.getAttribute('year')) || new Date().getFullYear();
@@ -1231,7 +1231,7 @@
                         series: [{
                             type: 'pie',
                             radius: '60%',
-                            data: [{"name":"中间件","value":2},{"name":"技术分享","value":1},{"name":"A1312 SSD硬盘 线缆","value":1},{"name":"NAS 无线打印机","value":1}],
+                            data: [{"name":"中间件","value":2},{"name":"NAS 无线打印机","value":1},{"name":"A1312 SSD硬盘 线缆","value":1},{"name":"技术分享","value":1}],
                             label: {
                                 position: 'outside',
                                 formatter: '{b} {c} ({d}%)',
@@ -1245,7 +1245,7 @@
                         legend: {
                             bottom: '0',
                             left: 'center',
-                            data: [{"name":"中间件","value":2},{"name":"技术分享","value":1},{"name":"A1312 SSD硬盘 线缆","value":1},{"name":"NAS 无线打印机","value":1}].map(tag => tag.name),
+                            data: [{"name":"中间件","value":2},{"name":"NAS 无线打印机","value":1},{"name":"A1312 SSD硬盘 线缆","value":1},{"name":"技术分享","value":1}].map(tag => tag.name),
                             textStyle: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         }
                     });
@@ -1267,13 +1267,13 @@
                         xAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#ccc' } } },
                         yAxis: { 
                             type: 'category', 
-                            data: [{"name":"软件技术","value":4},{"name":"硬件","value":1},{"name":"应用","value":1}].map(category => category.name).reverse(), 
+                            data: [{"name":"软件技术","value":4},{"name":"应用","value":1},{"name":"硬件","value":1}].map(category => category.name).reverse(), 
                             axisLabel: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         },
                         series: [{
                             name: 'Category Count',
                             type: 'bar',
-                            data: [{"name":"软件技术","value":4},{"name":"硬件","value":1},{"name":"应用","value":1}].map(category => category.value).reverse(),
+                            data: [{"name":"软件技术","value":4},{"name":"应用","value":1},{"name":"硬件","value":1}].map(category => category.value).reverse(),
                             label: {
                                 show: true,
                                 position: 'right',
@@ -1322,7 +1322,7 @@
                         },
                         series: [{
                             type: 'tree',
-                            data: [{"name":"Categories","children":[{"name":"软件技术","children":[],"count":4,"path":"软件技术"},{"name":"硬件","children":[],"count":1,"path":"硬件"},{"name":"应用","children":[],"count":1,"path":"应用"}],"count":0,"path":""}],
+                            data: [{"name":"Categories","children":[{"name":"软件技术","children":[],"count":4,"path":"软件技术"},{"name":"应用","children":[],"count":1,"path":"应用"},{"name":"硬件","children":[],"count":1,"path":"硬件"}],"count":0,"path":""}],
                             initialTreeDepth: -1,
                             top: '5%',
                             bottom: '10%',
