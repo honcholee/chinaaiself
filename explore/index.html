@@ -1071,7 +1071,7 @@
                         return result;
                     };
                     
-                    const groupedData = groupByYear([["2022-12-24",1],["2025-03-30",2],["2025-06-06",1],["2025-06-07",2]]);
+                    const groupedData = groupByYear([["2022-12-25",1],["2025-03-30",2],["2025-06-06",1],["2025-06-07",2]]);
                     const years = Object.keys(groupedData).reverse();
                     
                     var initYear = parseInt(heatmapChartDom.getAttribute('year')) || new Date().getFullYear();
@@ -1231,7 +1231,7 @@
                         series: [{
                             type: 'pie',
                             radius: '60%',
-                            data: [{"name":"中间件","value":2},{"name":"A1312 SSD硬盘 线缆","value":1},{"name":"技术分享","value":1},{"name":"NAS 无线打印机","value":1}],
+                            data: [{"name":"中间件","value":2},{"name":"技术分享","value":1},{"name":"A1312 SSD硬盘 线缆","value":1},{"name":"NAS 无线打印机","value":1}],
                             label: {
                                 position: 'outside',
                                 formatter: '{b} {c} ({d}%)',
@@ -1245,7 +1245,7 @@
                         legend: {
                             bottom: '0',
                             left: 'center',
-                            data: [{"name":"中间件","value":2},{"name":"A1312 SSD硬盘 线缆","value":1},{"name":"技术分享","value":1},{"name":"NAS 无线打印机","value":1}].map(tag => tag.name),
+                            data: [{"name":"中间件","value":2},{"name":"技术分享","value":1},{"name":"A1312 SSD硬盘 线缆","value":1},{"name":"NAS 无线打印机","value":1}].map(tag => tag.name),
                             textStyle: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         }
                     });

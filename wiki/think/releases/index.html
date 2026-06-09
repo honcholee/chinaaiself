@@ -71,7 +71,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">文档</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/wiki/think/">Honcho</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2026-06-09T14:41:37.920Z">2026-06-09</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2026-06-09T14:45:17.230Z">2026-06-09</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -92,6 +92,29 @@
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#YAML</span></span><br><span class="line"><span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">Private</span> <span class="string">Source</span> <span class="string">to</span> <span class="string">Public</span> <span class="string">Repo</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">main</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build-and-deploy:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Checkout</span> <span class="string">Source</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/checkout@v4</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">submodules:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Setup</span> <span class="string">Node</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-node@v4</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">node-version:</span> <span class="string">&#x27;20&#x27;</span></span><br><span class="line">          <span class="attr">cache:</span> <span class="string">&#x27;npm&#x27;</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Install</span> <span class="string">&amp;</span> <span class="string">Generate</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">          npm ci</span></span><br><span class="line"><span class="string">          npx hexo clean</span></span><br><span class="line"><span class="string">          npx hexo generate</span></span><br><span class="line"><span class="string"></span></span><br><span class="line">      <span class="comment"># 关键步骤：使用专门的 Action 将生成的 public 目录跨仓库推送到你公开的仓库 B</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">to</span> <span class="string">Public</span> <span class="string">Repo</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">JamesIves/github-pages-deploy-action@v4</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">folder:</span> <span class="string">public</span></span><br><span class="line">          <span class="attr">repository-name:</span> <span class="string">你的用户名/blog-output</span> <span class="comment"># 改为你公开的静态仓库名字</span></span><br><span class="line">          <span class="attr">branch:</span> <span class="string">main</span> <span class="comment"># 推送到公开仓库的主分支</span></span><br><span class="line">          <span class="attr">token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.MY_PERSONAL_TOKEN</span> <span class="string">&#125;&#125;</span> <span class="comment"># 见下方说明，需要配置一个具有写权限的个人 Token</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>🔑 关于 <code>MY_PERSONAL_TOKEN</code> 的配置</strong>： 因为是跨仓库推送，默认的 <code>GITHUB_TOKEN</code> 权限不够。你需要去 GitHub 账号的 <strong>Settings -&gt; Developer Settings -&gt; Personal Access Tokens (Tokens classic)</strong> 生成一个勾选了 <code>repo</code> 权限的 Token。然后把它复制到你<strong>私有源码仓库 A</strong> 的 <strong>Settings -&gt; Secrets and variables -&gt; Actions</strong> 中，添加为一个名为 <code>MY_PERSONAL_TOKEN</code> 的加密变量。</p>
+<h1 id="生成-Token："><a href="#生成-Token：" class="headerlink" title="生成 Token："></a>生成 Token：</h1><ul>
+<li><p>点击你的 GitHub 头像 -&gt; Settings -&gt; 左侧最底部 Developer Settings -&gt; Personal access tokens -&gt; 选择 Tokens (classic)。</p>
+</li>
+<li><p>点击 Generate new token (classic)。</p>
+</li>
+<li><p>Note 填：hexo-deploy-token。</p>
+<p>权限勾选：把 repo 这一大项完全勾选上（必须包含 repo:status, public_repo 等）。</p>
+</li>
+<li><p>点击最下方 Generate token，复制生成出来的那串以 ghp_ 开头的长代码（注意：离开页面后它就再也看不到了）。</p>
+</li>
+</ul>
+<h1 id="把-Token-塞进私有源码仓库："><a href="#把-Token-塞进私有源码仓库：" class="headerlink" title="把 Token 塞进私有源码仓库："></a>把 Token 塞进私有源码仓库：</h1><ul>
+<li><p>打开你的私有源码仓库 blog-source 的 GitHub 页面。</p>
+</li>
+<li><p>点击顶部的 Settings -&gt; 左侧菜单找到 Secrets and variables -&gt; 点击 Actions。</p>
+</li>
+<li><p>点击右侧的 New repository secret 按钮。</p>
+<p> Name 必须严格填写：MY_PERSONAL_TOKEN</p>
+<p>Secret&#x2F;Value 粘贴：刚才复制的那串 ghp_… 代码。</p>
+</li>
+<li><p>点击 Add secret 保存。</p>
+</li>
+</ul>
 </article>
 <div class="article-footer">
 
@@ -108,7 +131,7 @@
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%9B%A0%EF%B8%8F-%E7%BC%96%E5%86%99%E4%B8%93%E7%94%A8%E7%9A%84-GitHub-Actions-%E8%B7%A8%E4%BB%93%E5%BA%93%E6%8E%A8%E9%80%81%E8%84%9A%E6%9C%AC%EF%BC%9A"><span class="toc-text">🛠️ 编写专用的 GitHub Actions 跨仓库推送脚本：</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a></div></widget>
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%F0%9F%9B%A0%EF%B8%8F-%E7%BC%96%E5%86%99%E4%B8%93%E7%94%A8%E7%9A%84-GitHub-Actions-%E8%B7%A8%E4%BB%93%E5%BA%93%E6%8E%A8%E9%80%81%E8%84%9A%E6%9C%AC%EF%BC%9A"><span class="toc-text">🛠️ 编写专用的 GitHub Actions 跨仓库推送脚本：</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%9F%E6%88%90-Token%EF%BC%9A"><span class="toc-text">生成 Token：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8A%8A-Token-%E5%A1%9E%E8%BF%9B%E7%A7%81%E6%9C%89%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%EF%BC%9A"><span class="toc-text">把 Token 塞进私有源码仓库：</span></a></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a></div></widget>
 </div></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
@@ -1221,7 +1244,7 @@
                         series: [{
                             type: 'pie',
                             radius: '60%',
-                            data: [{"name":"中间件","value":2},{"name":"A1312 SSD硬盘 线缆","value":1},{"name":"技术分享","value":1},{"name":"NAS 无线打印机","value":1}],
+                            data: [{"name":"中间件","value":2},{"name":"技术分享","value":1},{"name":"A1312 SSD硬盘 线缆","value":1},{"name":"NAS 无线打印机","value":1}],
                             label: {
                                 position: 'outside',
                                 formatter: '{b} {c} ({d}%)',
@@ -1235,7 +1258,7 @@
                         legend: {
                             bottom: '0',
                             left: 'center',
-                            data: [{"name":"中间件","value":2},{"name":"A1312 SSD硬盘 线缆","value":1},{"name":"技术分享","value":1},{"name":"NAS 无线打印机","value":1}].map(tag => tag.name),
+                            data: [{"name":"中间件","value":2},{"name":"技术分享","value":1},{"name":"A1312 SSD硬盘 线缆","value":1},{"name":"NAS 无线打印机","value":1}].map(tag => tag.name),
                             textStyle: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         }
                     });
