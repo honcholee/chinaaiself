@@ -71,7 +71,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">文档</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/wiki/think/">Honcho</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2026-06-14T06:14:05.665Z">2026-06-14</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2026-06-14T06:51:43.965Z">2026-06-14</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -1048,7 +1048,7 @@
                         return result;
                     };
                     
-                    const groupedData = groupByYear([["2022-12-25",1],["2025-03-30",2],["2025-06-06",1],["2025-06-07",2],["2025-06-14",1],["2026-06-06",1]]);
+                    const groupedData = groupByYear([["2022-12-25",1],["2025-03-30",2],["2025-06-06",1],["2025-06-07",2],["2026-06-06",1],["2026-06-14",1]]);
                     const years = Object.keys(groupedData).reverse();
                     
                     var initYear = parseInt(heatmapChartDom.getAttribute('year')) || new Date().getFullYear();
@@ -1171,7 +1171,7 @@
                         series: [{
                             name: 'Articles',
                             type: 'line',
-                            data: [1,2,4,1],
+                            data: [1,2,3,2],
                             smooth: true,
                             lineStyle: { color: '#5470C6', width: 2 },
                             itemStyle: { color: '#5470C6' },
