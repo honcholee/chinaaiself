@@ -20,8 +20,7 @@
   <title>Hexo博客的搭建与部署 - honcho</title>
 
   
-  <meta name="description" content="一、打造零成本无限前缀的顶级域名邮箱系统Cloudflare + CloudMail 打造零成本、无限前缀的顶级域名邮箱系统
-">
+  <meta name="description" content="一、打造零成本无限前缀的顶级域名邮箱系统做 Web3 的都知道，邮箱是数字身份证。市面上主流的邮箱方案，要么收费贵，要么隐私堪忧，要么前缀固定不能随意创建。利用 Cloudflare 的边缘计算能力，配合开源项目 CloudMail，实现零成本、免服务器、无限前缀、能收能发的私有邮箱系统。数据...">
   
   <meta name="keywords" content="技术分享">
 
@@ -43,7 +42,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Honcho","sameAs":[]},"dateCreated":"2025-06-07T11:52:29+08:00","dateModified":"2026-06-14T12:00:57+08:00","datePublished":"2025-06-07T11:52:29+08:00","description":"","headline":"Hexo博客的搭建与部署","mainEntityOfPage":{"@type":"WebPage","@id":"https://honcho.cc.cd/posts/cloud%20mail"},"publisher":{"@type":"Organization","name":"Honcho","sameAs":[]},"url":"https://honcho.cc.cd/posts/cloud%20mail","keywords":"技术分享","image":[]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Honcho","sameAs":[]},"dateCreated":"2025-06-07T11:52:29+08:00","dateModified":"2026-06-14T12:24:23+08:00","datePublished":"2025-06-07T11:52:29+08:00","description":"","headline":"Hexo博客的搭建与部署","mainEntityOfPage":{"@type":"WebPage","@id":"https://honcho.cc.cd/posts/cloud%20mail"},"publisher":{"@type":"Organization","name":"Honcho","sameAs":[]},"url":"https://honcho.cc.cd/posts/cloud%20mail","keywords":"技术分享","image":[]}</script>
   <link rel="stylesheet" href="/css/extra.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css"/><script defer src="https://cloud.umami.is/script.js" data-website-id="e9fddf86-1a6f-4bea-836e-6703bb9b88fd"></script>
 </head>
 <body><div id="l_cover"></div><div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
@@ -74,7 +73,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/">软件技术</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-06-07T03:52:29.000Z">2025-06-07</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-06-14T04:00:57.226Z">2026-06-14</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-06-07T03:52:29.000Z">2025-06-07</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-06-14T04:24:23.467Z">2026-06-14</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -85,7 +84,142 @@
     </div>
     
   </div>
-  </div><article class="md-text content"><h1 id="一、打造零成本无限前缀的顶级域名邮箱系统"><a href="#一、打造零成本无限前缀的顶级域名邮箱系统" class="headerlink" title="一、打造零成本无限前缀的顶级域名邮箱系统"></a>一、打造零成本无限前缀的顶级域名邮箱系统</h1><p>Cloudflare + CloudMail 打造零成本、无限前缀的顶级域名邮箱系统</p>
+  </div><article class="md-text content"><h1 id="一、打造零成本无限前缀的顶级域名邮箱系统"><a href="#一、打造零成本无限前缀的顶级域名邮箱系统" class="headerlink" title="一、打造零成本无限前缀的顶级域名邮箱系统"></a>一、打造零成本无限前缀的顶级域名邮箱系统</h1><p>做 Web3 的都知道，邮箱是数字身份证。市面上主流的邮箱方案，要么收费贵，要么隐私堪忧，要么前缀固定不能随意创建。利用 Cloudflare 的边缘计算能力，配合开源项目 CloudMail，实现零成本、免服务器、无限前缀、能收能发的私有邮箱系统。数据完全在自己手里。</p>
+<h2 id="为什么要私有邮箱"><a href="#为什么要私有邮箱" class="headerlink" title="为什么要私有邮箱"></a>为什么要私有邮箱</h2><table>
+<thead>
+<tr>
+<th>场景</th>
+<th>痛点</th>
+<th>价值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>注册交易所</td>
+<td>垃圾邮件轰炸主邮箱</td>
+<td>用 exchange@ 专门收验证码</td>
+</tr>
+<tr>
+<td>注册空投项目</td>
+<td>担心隐私泄露</td>
+<td>用 airdrop@ 隔离风险</td>
+</tr>
+<tr>
+<td>注册金融机构</td>
+<td>需要高安全性</td>
+<td>用 bank@ 独立管理</td>
+</tr>
+<tr>
+<td>日常使用</td>
+<td>主邮箱被污染</td>
+<td>无限前缀随意切换</td>
+</tr>
+</tbody></table>
+<h2 id="准备工作：Cloudflare-三件套"><a href="#准备工作：Cloudflare-三件套" class="headerlink" title="准备工作：Cloudflare 三件套"></a>准备工作：Cloudflare 三件套</h2><table>
+<thead>
+<tr>
+<th>服务</th>
+<th>角色</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>D1 数据库</td>
+<td>账本</td>
+<td>记录邮件索引、发件人等</td>
+</tr>
+<tr>
+<td>KV 存储</td>
+<td>中转站</td>
+<td>存储临时配置</td>
+</tr>
+<tr>
+<td>R2 对象存储</td>
+<td>仓库</td>
+<td>免费 10GB，存邮件附件和正文</td>
+</tr>
+</tbody></table>
+<p>三个服务都在 Cloudflare 免费套餐内。</p>
+<h2 id="部署与环境搭建"><a href="#部署与环境搭建" class="headerlink" title="部署与环境搭建"></a>部署与环境搭建</h2><h3 id="Fork-代码与部署-Worker"><a href="#Fork-代码与部署-Worker" class="headerlink" title="Fork 代码与部署 Worker"></a>Fork 代码与部署 Worker</h3><p>  CloudMail GitHub：<a target="_blank" rel="noopener" href="https://github.com/honcholee/cloud-mail">点击前往</a><br>  点 Fork 把代码复制到你自己的 GitHub。回到 Cloudflare 控制台，创建 Workers 应用程序，选择连接 GitHub 仓库。在高级设置里把路径设为 mail worker，点部署。</p>
+<h3 id="绑定自定义域"><a href="#绑定自定义域" class="headerlink" title="绑定自定义域"></a>绑定自定义域</h3><p>  别用 CF 默认分配的那串长地址，绑自己的域名。比如 mail.你的域名.com。这样你的邮箱访问地址就是 <a target="_blank" rel="noopener" href="https://mail.你的域名.com./">https://mail.你的域名.com。</a></p>
+<h3 id="配置核心变量"><a href="#配置核心变量" class="headerlink" title="配置核心变量"></a>配置核心变量</h3><p>进 Workers 设置 → 变量，添加这三个：</p>
+<table>
+<thead>
+<tr>
+<th>变量名</th>
+<th>类型</th>
+<th>示例值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>domain</td>
+<td>JSON</td>
+<td>[“你的域名.com”]</td>
+<td>你的根域名</td>
+</tr>
+<tr>
+<td>admin</td>
+<td>文本</td>
+<td>admin@你的域名.com</td>
+<td>管理员邮箱</td>
+</tr>
+<tr>
+<td>SECRET</td>
+<td>文本</td>
+<td>一串复杂字符</td>
+<td>用于初始化后台</td>
+</tr>
+</tbody></table>
+<p>备注：SECRET 设复杂一点，大小写字母加数字加符号。</p>
+<h3 id="开通存储与绑定"><a href="#开通存储与绑定" class="headerlink" title="开通存储与绑定"></a>开通存储与绑定</h3><h4 id="创建-D1-数据库"><a href="#创建-D1-数据库" class="headerlink" title="创建 D1 数据库"></a>创建 D1 数据库</h4><p>Cloudflare → Workers 和 Pages → D1 数据库 → 创建数据库，起名 cloud-mail-db。记录下数据库 ID。</p>
+<h4 id="创建-KV-命名空间"><a href="#创建-KV-命名空间" class="headerlink" title="创建 KV 命名空间"></a>创建 KV 命名空间</h4><p>进 KV 命名空间 → 创建，起名 cloud-mail-kv。</p>
+<h4 id="创建-R2-存储桶"><a href="#创建-R2-存储桶" class="headerlink" title="创建 R2 存储桶"></a>创建 R2 存储桶</h4><p>进 R2 对象存储 → 创建存储桶，起名 cloud-mail-r2。</p>
+<h4 id="绑定到-Worker"><a href="#绑定到-Worker" class="headerlink" title="绑定到 Worker"></a>绑定到 Worker</h4><p>进 Worker → 设置 → 变量 → 绑定：</p>
+<table>
+<thead>
+<tr>
+<th>绑定项</th>
+<th>变量名</th>
+<th>选择的内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>D1 数据库</td>
+<td>db</td>
+<td>你创建的 D1 数据库</td>
+</tr>
+<tr>
+<td>KV 命名空间</td>
+<td>kv</td>
+<td>你创建的 KV 空间</td>
+</tr>
+<tr>
+<td>R2 存储桶</td>
+<td>r2</td>
+<td>你创建的 R2 存储桶</td>
+</tr>
+<tr>
+<td>变量名大小写都可以，但别填错。</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="开启收信与初始化"><a href="#开启收信与初始化" class="headerlink" title="开启收信与初始化"></a>开启收信与初始化</h3><h4 id="设置电子邮件路由"><a href="#设置电子邮件路由" class="headerlink" title="设置电子邮件路由"></a>设置电子邮件路由</h4><p>进 Cloudflare 域名管理 → 电子邮件路由 → 添加记录并启用。在路由规则中把 Catch-all 地址的操作设为”发送至 Worker”，目标选择你的 cloud-mail Worker。<br>这样无论别人往你域名的什么前缀发信，你都能收到。</p>
+<h4 id="初始化后台"><a href="#初始化后台" class="headerlink" title="初始化后台"></a>初始化后台</h4><p>访问 https:&#x2F;&#x2F;你的域名&#x2F;api&#x2F;init&#x2F;你的SECRET</p>
+<p>看到 {“success”:true} 就行了。然后直接访问你的域名，注册并登录管理员账号。</p>
+<h4 id="对接-Resend-实现发信"><a href="#对接-Resend-实现发信" class="headerlink" title="对接 Resend 实现发信"></a>对接 Resend 实现发信</h4><p>Cloudflare 默认只能收信。想发信需要 Resend。</p>
+<p>去 Resend 官网 注册账号。添加你的域名，系统会提供 DNS 验证记录，回到 Cloudflare DNS 设置里添加。如果自动没加上就手动加。_dmarc 的 TXT 记录（内容 v&#x3D;DMARC1; p&#x3D;none;）也要添上，不然你的邮件可能被对方当成垃圾邮件。</p>
+<p>在 Resend 生成 API Key，回到 CloudMail 后台 → 邮件设置，填入 Resend Token。配置完就能用任意前缀发邮件了。</p>
+<h4 id="绑定电报机器人（可选）"><a href="#绑定电报机器人（可选）" class="headerlink" title="绑定电报机器人（可选）"></a>绑定电报机器人（可选）</h4><p>把 Telegram 机器人挂上，新邮件实时推送。</p>
+<p>找 @BotFather 申请机器人 Token。找 @userinfobot 获取你的 Telegram ID。在 CloudMail 后台系统设置中开启 Telegram 推送，填入 Token 和 ID。记得去 Telegram 给你的机器人发个 &#x2F;start，不然它没权限给你弹窗。</p>
+<p>配置完成后，每封新邮件都会实时推送到手机。</p>
+<h1 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h1><p>完全免费，无限前缀，数据自持，能收能发，电报秒提醒。就是配置步骤有点多，需要耐心。发信依赖 Resend，但免费额度每月 3000 封，个人用完全够。需要一个自己的域名。</p>
+<h1 id="一些常见的问题"><a href="#一些常见的问题" class="headerlink" title="一些常见的问题"></a>一些常见的问题</h1><h2 id="这套方案完全免费吗？"><a href="#这套方案完全免费吗？" class="headerlink" title="这套方案完全免费吗？"></a>这套方案完全免费吗？</h2><p>是的。Cloudflare 的 D1、KV、R2、Workers 都在免费套餐内。Resend 每月 3000 封免费邮件。</p>
+<h2 id="能创建多少个邮箱前缀？"><a href="#能创建多少个邮箱前缀？" class="headerlink" title="能创建多少个邮箱前缀？"></a>能创建多少个邮箱前缀？</h2><p>无限个。有人往你域名发信，任何前缀都会自动创建邮箱。</p>
+<h2 id="能发邮件吗？"><a href="#能发邮件吗？" class="headerlink" title="能发邮件吗？"></a>能发邮件吗？</h2><p>能。对接 Resend 就行。</p>
+<h2 id="没有域名可以用吗？"><a href="#没有域名可以用吗？" class="headerlink" title="没有域名可以用吗？"></a>没有域名可以用吗？</h2><p>不行。需要有一个自己的域名。</p>
+<h2 id="电报机器人收不到推送怎么办？"><a href="#电报机器人收不到推送怎么办？" class="headerlink" title="电报机器人收不到推送怎么办？"></a>电报机器人收不到推送怎么办？</h2><p>确认给机器人发过 &#x2F;start，确认 Token 和 ID 填对了，确认 Worker 自定义域地址正确。</p>
+<h2 id="Resend-免费额度够用吗？"><a href="#Resend-免费额度够用吗？" class="headerlink" title="Resend 免费额度够用吗？"></a>Resend 免费额度够用吗？</h2><p>每月 3000 封，个人完全够。超出可以考虑付费。</p>
 </article>
 <div class="article-footer">
 
@@ -94,8 +228,7 @@
       <div class="header"><span>分享文章</span></div>
       <div class="body">
         <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://honcho.cc.cd/posts/cloud%20mail" /></div>
-        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot;)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://honcho.cc.cd/posts/cloud%20mail&title=Hexo博客的搭建与部署 - honcho&summary=一、打造零成本无限前缀的顶级域名邮箱系统Cloudflare + CloudMail 打造零成本、无限前缀的顶级域名邮箱系统
-"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=Hexo博客的搭建与部署 - honcho&amp;body=https://honcho.cc.cd/posts/cloud%20mail"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot;)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://honcho.cc.cd/posts/cloud%20mail&title=Hexo博客的搭建与部署 - honcho&summary=一、打造零成本无限前缀的顶级域名邮箱系统做 Web3 的都知道，邮箱是数字身份证。市面上主流的邮箱方案，要么收费贵，要么隐私堪忧，要么前缀固定不能随意创建。利用 Cloudflare 的边缘计算能力，配合开源项目 CloudMail，..."><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=Hexo博客的搭建与部署 - honcho&amp;body=https://honcho.cc.cd/posts/cloud%20mail"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img  src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
         
         <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
           <img src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://honcho.cc.cd/posts/cloud%20mail"/>
@@ -118,7 +251,7 @@
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%89%93%E9%80%A0%E9%9B%B6%E6%88%90%E6%9C%AC%E6%97%A0%E9%99%90%E5%89%8D%E7%BC%80%E7%9A%84%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F"><span class="toc-text">一、打造零成本无限前缀的顶级域名邮箱系统</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a></div></widget>
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%89%93%E9%80%A0%E9%9B%B6%E6%88%90%E6%9C%AC%E6%97%A0%E9%99%90%E5%89%8D%E7%BC%80%E7%9A%84%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1%E7%B3%BB%E7%BB%9F"><span class="toc-text">一、打造零成本无限前缀的顶级域名邮箱系统</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%A7%81%E6%9C%89%E9%82%AE%E7%AE%B1"><span class="toc-text">为什么要私有邮箱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C%EF%BC%9ACloudflare-%E4%B8%89%E4%BB%B6%E5%A5%97"><span class="toc-text">准备工作：Cloudflare 三件套</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E4%B8%8E%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">部署与环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Fork-%E4%BB%A3%E7%A0%81%E4%B8%8E%E9%83%A8%E7%BD%B2-Worker"><span class="toc-text">Fork 代码与部署 Worker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F"><span class="toc-text">绑定自定义域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%A0%B8%E5%BF%83%E5%8F%98%E9%87%8F"><span class="toc-text">配置核心变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E9%80%9A%E5%AD%98%E5%82%A8%E4%B8%8E%E7%BB%91%E5%AE%9A"><span class="toc-text">开通存储与绑定</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA-D1-%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">创建 D1 数据库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA-KV-%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="toc-text">创建 KV 命名空间</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA-R2-%E5%AD%98%E5%82%A8%E6%A1%B6"><span class="toc-text">创建 R2 存储桶</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%91%E5%AE%9A%E5%88%B0-Worker"><span class="toc-text">绑定到 Worker</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E6%94%B6%E4%BF%A1%E4%B8%8E%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-text">开启收信与初始化</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%E8%B7%AF%E7%94%B1"><span class="toc-text">设置电子邮件路由</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E5%90%8E%E5%8F%B0"><span class="toc-text">初始化后台</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E6%8E%A5-Resend-%E5%AE%9E%E7%8E%B0%E5%8F%91%E4%BF%A1"><span class="toc-text">对接 Resend 实现发信</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%91%E5%AE%9A%E7%94%B5%E6%8A%A5%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="toc-text">绑定电报机器人（可选）</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%93%E9%AA%8C"><span class="toc-text">体验</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-text">一些常见的问题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%99%E5%A5%97%E6%96%B9%E6%A1%88%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E5%90%97%EF%BC%9F"><span class="toc-text">这套方案完全免费吗？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%BD%E5%88%9B%E5%BB%BA%E5%A4%9A%E5%B0%91%E4%B8%AA%E9%82%AE%E7%AE%B1%E5%89%8D%E7%BC%80%EF%BC%9F"><span class="toc-text">能创建多少个邮箱前缀？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%BD%E5%8F%91%E9%82%AE%E4%BB%B6%E5%90%97%EF%BC%9F"><span class="toc-text">能发邮件吗？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B2%A1%E6%9C%89%E5%9F%9F%E5%90%8D%E5%8F%AF%E4%BB%A5%E7%94%A8%E5%90%97%EF%BC%9F"><span class="toc-text">没有域名可以用吗？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E6%8A%A5%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%94%B6%E4%B8%8D%E5%88%B0%E6%8E%A8%E9%80%81%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F"><span class="toc-text">电报机器人收不到推送怎么办？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Resend-%E5%85%8D%E8%B4%B9%E9%A2%9D%E5%BA%A6%E5%A4%9F%E7%94%A8%E5%90%97%EF%BC%9F"><span class="toc-text">Resend 免费额度够用吗？</span></a></li></ol></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a></div></widget>
 </div></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>

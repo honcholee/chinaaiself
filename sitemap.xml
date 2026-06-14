@@ -80,7 +80,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/why/articles</loc>
+    <loc>https://honcho.cc.cd/wiki/why/examples</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -89,7 +89,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/why/examples</loc>
+    <loc>https://honcho.cc.cd/wiki/why/articles</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -154,7 +154,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/page/</loc>
+    <loc>https://honcho.cc.cd/settings/</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -163,7 +163,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/settings/</loc>
+    <loc>https://honcho.cc.cd/page/</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -217,7 +217,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/social/stats/</loc>
+    <loc>https://honcho.cc.cd/social/update/</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -226,7 +226,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/social/update/</loc>
+    <loc>https://honcho.cc.cd/social/stats/</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>

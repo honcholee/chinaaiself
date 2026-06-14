@@ -11,7 +11,7 @@
   <rights>All rights reserved 2026, Honcho</rights>
   <subtitle>硬件 代码 生活 | honcho.cc.cd</subtitle>
   <title>honcho</title>
-  <updated>2026-06-14T04:00:57.226Z</updated>
+  <updated>2026-06-14T04:24:23.467Z</updated>
   <entry>
     <author>
       <name>Honcho</name>
@@ -28,7 +28,7 @@
       <![CDATA[<h1 id="使用-Umami-官方的免费云服务（零基础，3分钟搞定）"><a href="#使用-Umami-官方的免费云服务（零基础，3分钟搞定）" class="headerlink" title="使用 Umami 官方的免费云服务（零基础，3分钟搞定）"></a>使用]]>
     </summary>
     <title>使用 Umami 官方的免费云服务</title>
-    <updated>2026-06-14T04:00:57.226Z</updated>
+    <updated>2026-06-14T04:24:23.467Z</updated>
   </entry>
   <entry>
     <author>
@@ -46,7 +46,7 @@
       <![CDATA[<h2 id="一、Hexo简介"><a href="#一、Hexo简介" class="headerlink" title="一、Hexo简介"></a>一、Hexo简介</h2><p>Hexo快速、简洁且高效的博客框架，属于静态网站，因为是开源的，所以官网有许多精致的主题供大]]>
     </summary>
     <title>Hexo博客的搭建与部署</title>
-    <updated>2026-06-14T04:00:57.226Z</updated>
+    <updated>2026-06-14T04:24:23.467Z</updated>
   </entry>
   <entry>
     <author>
@@ -64,7 +64,7 @@
       <![CDATA[<h2 id="iMac-2011-A1312-三个硬盘全速率接入方案"><a href="#iMac-2011-A1312-三个硬盘全速率接入方案" class="headerlink" title="iMac 2011 (A1312) 三个硬盘全速率接入方案"></a><st]]>
     </summary>
     <title>Imac 2011 安装硬盘</title>
-    <updated>2026-06-14T04:00:57.226Z</updated>
+    <updated>2026-06-14T04:24:23.467Z</updated>
   </entry>
   <entry>
     <author>
@@ -73,7 +73,7 @@
     <category term="软件技术" scheme="https://honcho.cc.cd/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/"/>
     <category term="技术分享" scheme="https://honcho.cc.cd/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     <content>
-      <![CDATA[<h1 id="一、打造零成本无限前缀的顶级域名邮箱系统"><a href="#一、打造零成本无限前缀的顶级域名邮箱系统" class="headerlink" title="一、打造零成本无限前缀的顶级域名邮箱系统"></a>一、打造零成本无限前缀的顶级域名邮箱系统</h1><p>Cloudflare + CloudMail 打造零成本、无限前缀的顶级域名邮箱系统</p>]]>
+      <![CDATA[<h1 id="一、打造零成本无限前缀的顶级域名邮箱系统"><a href="#一、打造零成本无限前缀的顶级域名邮箱系统" class="headerlink" title="一、打造零成本无限前缀的顶级域名邮箱系统"></a>一、打造零成本无限前缀的顶级域名邮箱系统</h1><p>做 Web3 的都知道，邮箱是数字身份证。市面上主流的邮箱方案，要么收费贵，要么隐私堪忧，要么前缀固定不能随意创建。利用 Cloudflare 的边缘计算能力，配合开源项目 CloudMail，实现零成本、免服务器、无限前缀、能收能发的私有邮箱系统。数据完全在自己手里。</p><h2 id="为什么要私有邮箱"><a href="#为什么要私有邮箱" class="headerlink" title="为什么要私有邮箱"></a>为什么要私有邮箱</h2><table><thead><tr><th>场景</th><th>痛点</th><th>价值</th></tr></thead><tbody><tr><td>注册交易所</td><td>垃圾邮件轰炸主邮箱</td><td>用 exchange@ 专门收验证码</td></tr><tr><td>注册空投项目</td><td>担心隐私泄露</td><td>用 airdrop@ 隔离风险</td></tr><tr><td>注册金融机构</td><td>需要高安全性</td><td>用 bank@ 独立管理</td></tr><tr><td>日常使用</td><td>主邮箱被污染</td><td>无限前缀随意切换</td></tr></tbody></table><h2 id="准备工作：Cloudflare-三件套"><a href="#准备工作：Cloudflare-三件套" class="headerlink" title="准备工作：Cloudflare 三件套"></a>准备工作：Cloudflare 三件套</h2><table><thead><tr><th>服务</th><th>角色</th><th>说明</th></tr></thead><tbody><tr><td>D1 数据库</td><td>账本</td><td>记录邮件索引、发件人等</td></tr><tr><td>KV 存储</td><td>中转站</td><td>存储临时配置</td></tr><tr><td>R2 对象存储</td><td>仓库</td><td>免费 10GB，存邮件附件和正文</td></tr></tbody></table><p>三个服务都在 Cloudflare 免费套餐内。</p><h2 id="部署与环境搭建"><a href="#部署与环境搭建" class="headerlink" title="部署与环境搭建"></a>部署与环境搭建</h2><h3 id="Fork-代码与部署-Worker"><a href="#Fork-代码与部署-Worker" class="headerlink" title="Fork 代码与部署 Worker"></a>Fork 代码与部署 Worker</h3><p>  CloudMail GitHub：<a href="https://github.com/honcholee/cloud-mail">点击前往</a><br>  点 Fork 把代码复制到你自己的 GitHub。回到 Cloudflare 控制台，创建 Workers 应用程序，选择连接 GitHub 仓库。在高级设置里把路径设为 mail worker，点部署。</p><h3 id="绑定自定义域"><a href="#绑定自定义域" class="headerlink" title="绑定自定义域"></a>绑定自定义域</h3><p>  别用 CF 默认分配的那串长地址，绑自己的域名。比如 mail.你的域名.com。这样你的邮箱访问地址就是 <a href="https://mail.你的域名.com./">https://mail.你的域名.com。</a></p><h3 id="配置核心变量"><a href="#配置核心变量" class="headerlink" title="配置核心变量"></a>配置核心变量</h3><p>进 Workers 设置 → 变量，添加这三个：</p><table><thead><tr><th>变量名</th><th>类型</th><th>示例值</th><th>说明</th></tr></thead><tbody><tr><td>domain</td><td>JSON</td><td>[“你的域名.com”]</td><td>你的根域名</td></tr><tr><td>admin</td><td>文本</td><td>admin@你的域名.com</td><td>管理员邮箱</td></tr><tr><td>SECRET</td><td>文本</td><td>一串复杂字符</td><td>用于初始化后台</td></tr></tbody></table><p>备注：SECRET 设复杂一点，大小写字母加数字加符号。</p><h3 id="开通存储与绑定"><a href="#开通存储与绑定" class="headerlink" title="开通存储与绑定"></a>开通存储与绑定</h3><h4 id="创建-D1-数据库"><a href="#创建-D1-数据库" class="headerlink" title="创建 D1 数据库"></a>创建 D1 数据库</h4><p>Cloudflare → Workers 和 Pages → D1 数据库 → 创建数据库，起名 cloud-mail-db。记录下数据库 ID。</p><h4 id="创建-KV-命名空间"><a href="#创建-KV-命名空间" class="headerlink" title="创建 KV 命名空间"></a>创建 KV 命名空间</h4><p>进 KV 命名空间 → 创建，起名 cloud-mail-kv。</p><h4 id="创建-R2-存储桶"><a href="#创建-R2-存储桶" class="headerlink" title="创建 R2 存储桶"></a>创建 R2 存储桶</h4><p>进 R2 对象存储 → 创建存储桶，起名 cloud-mail-r2。</p><h4 id="绑定到-Worker"><a href="#绑定到-Worker" class="headerlink" title="绑定到 Worker"></a>绑定到 Worker</h4><p>进 Worker → 设置 → 变量 → 绑定：</p><table><thead><tr><th>绑定项</th><th>变量名</th><th>选择的内容</th></tr></thead><tbody><tr><td>D1 数据库</td><td>db</td><td>你创建的 D1 数据库</td></tr><tr><td>KV 命名空间</td><td>kv</td><td>你创建的 KV 空间</td></tr><tr><td>R2 存储桶</td><td>r2</td><td>你创建的 R2 存储桶</td></tr><tr><td>变量名大小写都可以，但别填错。</td><td></td><td></td></tr></tbody></table><h3 id="开启收信与初始化"><a href="#开启收信与初始化" class="headerlink" title="开启收信与初始化"></a>开启收信与初始化</h3><h4 id="设置电子邮件路由"><a href="#设置电子邮件路由" class="headerlink" title="设置电子邮件路由"></a>设置电子邮件路由</h4><p>进 Cloudflare 域名管理 → 电子邮件路由 → 添加记录并启用。在路由规则中把 Catch-all 地址的操作设为”发送至 Worker”，目标选择你的 cloud-mail Worker。<br>这样无论别人往你域名的什么前缀发信，你都能收到。</p><h4 id="初始化后台"><a href="#初始化后台" class="headerlink" title="初始化后台"></a>初始化后台</h4><p>访问 https:&#x2F;&#x2F;你的域名&#x2F;api&#x2F;init&#x2F;你的SECRET</p><p>看到 {“success”:true} 就行了。然后直接访问你的域名，注册并登录管理员账号。</p><h4 id="对接-Resend-实现发信"><a href="#对接-Resend-实现发信" class="headerlink" title="对接 Resend 实现发信"></a>对接 Resend 实现发信</h4><p>Cloudflare 默认只能收信。想发信需要 Resend。</p><p>去 Resend 官网 注册账号。添加你的域名，系统会提供 DNS 验证记录，回到 Cloudflare DNS 设置里添加。如果自动没加上就手动加。_dmarc 的 TXT 记录（内容 v&#x3D;DMARC1; p&#x3D;none;）也要添上，不然你的邮件可能被对方当成垃圾邮件。</p><p>在 Resend 生成 API Key，回到 CloudMail 后台 → 邮件设置，填入 Resend Token。配置完就能用任意前缀发邮件了。</p><h4 id="绑定电报机器人（可选）"><a href="#绑定电报机器人（可选）" class="headerlink" title="绑定电报机器人（可选）"></a>绑定电报机器人（可选）</h4><p>把 Telegram 机器人挂上，新邮件实时推送。</p><p>找 @BotFather 申请机器人 Token。找 @userinfobot 获取你的 Telegram ID。在 CloudMail 后台系统设置中开启 Telegram 推送，填入 Token 和 ID。记得去 Telegram 给你的机器人发个 &#x2F;start，不然它没权限给你弹窗。</p><p>配置完成后，每封新邮件都会实时推送到手机。</p><h1 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h1><p>完全免费，无限前缀，数据自持，能收能发，电报秒提醒。就是配置步骤有点多，需要耐心。发信依赖 Resend，但免费额度每月 3000 封，个人用完全够。需要一个自己的域名。</p><h1 id="一些常见的问题"><a href="#一些常见的问题" class="headerlink" title="一些常见的问题"></a>一些常见的问题</h1><h2 id="这套方案完全免费吗？"><a href="#这套方案完全免费吗？" class="headerlink" title="这套方案完全免费吗？"></a>这套方案完全免费吗？</h2><p>是的。Cloudflare 的 D1、KV、R2、Workers 都在免费套餐内。Resend 每月 3000 封免费邮件。</p><h2 id="能创建多少个邮箱前缀？"><a href="#能创建多少个邮箱前缀？" class="headerlink" title="能创建多少个邮箱前缀？"></a>能创建多少个邮箱前缀？</h2><p>无限个。有人往你域名发信，任何前缀都会自动创建邮箱。</p><h2 id="能发邮件吗？"><a href="#能发邮件吗？" class="headerlink" title="能发邮件吗？"></a>能发邮件吗？</h2><p>能。对接 Resend 就行。</p><h2 id="没有域名可以用吗？"><a href="#没有域名可以用吗？" class="headerlink" title="没有域名可以用吗？"></a>没有域名可以用吗？</h2><p>不行。需要有一个自己的域名。</p><h2 id="电报机器人收不到推送怎么办？"><a href="#电报机器人收不到推送怎么办？" class="headerlink" title="电报机器人收不到推送怎么办？"></a>电报机器人收不到推送怎么办？</h2><p>确认给机器人发过 &#x2F;start，确认 Token 和 ID 填对了，确认 Worker 自定义域地址正确。</p><h2 id="Resend-免费额度够用吗？"><a href="#Resend-免费额度够用吗？" class="headerlink" title="Resend 免费额度够用吗？"></a>Resend 免费额度够用吗？</h2><p>每月 3000 封，个人完全够。超出可以考虑付费。</p>]]>
     </content>
     <id>https://honcho.cc.cd/posts/cloud%20mail</id>
     <link href="https://honcho.cc.cd/posts/cloud%20mail"/>
@@ -82,7 +82,7 @@
       <![CDATA[<h1 id="一、打造零成本无限前缀的顶级域名邮箱系统"><a href="#一、打造零成本无限前缀的顶级域名邮箱系统" class="headerlink" title="一、打造零成本无限前缀的顶级域名邮箱系统"></a>一、打造零成本无限前缀的顶级域名邮箱系统</h1><]]>
     </summary>
     <title>Hexo博客的搭建与部署</title>
-    <updated>2026-06-14T04:00:57.226Z</updated>
+    <updated>2026-06-14T04:24:23.467Z</updated>
   </entry>
   <entry>
     <author>
@@ -99,7 +99,7 @@
       <![CDATA[<h3 id="复制仓库"><a href="#复制仓库" class="headerlink" title="复制仓库"></a>复制仓库</h3><p>首先 <a href="https://github.com/wuzhengmao/twikoo-cloudflare/fo]]>
     </summary>
     <title>部署Twikoo</title>
-    <updated>2026-06-14T04:00:57.226Z</updated>
+    <updated>2026-06-14T04:24:23.467Z</updated>
   </entry>
   <entry>
     <author>
@@ -120,7 +120,7 @@
 <figure class="highl]]>
     </summary>
     <title>Docker使用过的命令</title>
-    <updated>2026-06-14T04:00:57.226Z</updated>
+    <updated>2026-06-14T04:24:23.467Z</updated>
   </entry>
   <entry>
     <author>
@@ -138,7 +138,7 @@
       <![CDATA[<h1 id="Docker-学习笔记"><a href="#Docker-学习笔记" class="headerlink" title="Docker 学习笔记"></a>Docker 学习笔记</h1><h2 id="第一章：镜像管理"><a href="#第一章：镜像管理"]]>
     </summary>
     <title>Docker学习笔记</title>
-    <updated>2026-06-14T04:00:57.226Z</updated>
+    <updated>2026-06-14T04:24:23.467Z</updated>
   </entry>
   <entry>
     <author>
@@ -156,6 +156,6 @@
       <![CDATA[<p>NAS搭建一个打印服务器 ，连接在没有无线打印功能的打印机上，实现PC和手机的无线打印。从网上查找资料，发现各种说法不太一致，经反复试验，终于成功安装HP多功能一体机，现总结如下：<br>首先打印机连接树莓派USB接口，开机。将树莓派内网IP地址设为固定地址。安装CUPS(]]>
     </summary>
     <title>搭建打印服务器</title>
-    <updated>2026-06-14T04:00:57.226Z</updated>
+    <updated>2026-06-14T04:24:23.467Z</updated>
   </entry>
 </feed>
