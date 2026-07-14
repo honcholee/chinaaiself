@@ -288,17 +288,17 @@ html[data-theme="light"] .hljs {
 .article-header h1.title,
 #content h1.title,
 .post h1.title {
-  margin-top: 4px !important;       /* 强制缩减标题上边距 */
-  margin-bottom: 4px !important;    /* 强制缩减标题下边距 */
+  margin-top: 2px !important;       /* 强制缩减标题上边距 */
+  margin-bottom: 2px !important;    /* 强制缩减标题下边距 */
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  line-height: 1.2 !important;
+  line-height: 1 !important;
 }
 
 /* 2. 缩减面包屑和时间区域的下边距（让它们离大标题更近） */
 .article-header .bread-crumb,
 .article-header .meta-v3,
 .article-meta {
-  margin-bottom: 4px !important;
+  margin-bottom: 2px !important;
   padding-bottom: 0 !important;
 }
