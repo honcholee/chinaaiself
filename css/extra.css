@@ -279,12 +279,25 @@ html[data-theme="light"] .hljs {
 }
 
 /* ==========================================
-   自定义：缩减文章/页面 顶部大标题的上下间距
+   强力兼容版：缩减页面顶部大标题上下间距
    ========================================== */
 
-/* 1. 调整标题上方的间距（即与“发布于...”时间那一行的距离） */
-.l_body .article-header h1.title {
-  margin-top: 0.5rem !important;    /* 默认间距较大，这里改小 */
-  margin-bottom: 0.5rem !important; /* 调整标题下方的间距 */
-  line-height: 1.2 !important;      /* 稍微紧凑一点标题自身的行高 */
+/* 1. 针对 Stellar 主题中所有可能的大标题进行全覆盖 */
+.article .article-header h1,
+.article-header h1.title,
+#content h1.title,
+.post h1.title {
+  margin-top: 4px !important;       /* 强制缩减标题上边距 */
+  margin-bottom: 4px !important;    /* 强制缩减标题下边距 */
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1.2 !important;
+}
+
+/* 2. 缩减面包屑和时间区域的下边距（让它们离大标题更近） */
+.article-header .bread-crumb,
+.article-header .meta-v3,
+.article-meta {
+  margin-bottom: 4px !important;
+  padding-bottom: 0 !important;
 }
