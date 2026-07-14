@@ -277,3 +277,14 @@ html[data-theme="light"] .hljs {
 .social-wrap .social:hover {
   background-color: #d7beb6
 }
+
+/* ==========================================
+   自定义：缩减文章/页面 顶部大标题的上下间距
+   ========================================== */
+
+/* 1. 调整标题上方的间距（即与“发布于...”时间那一行的距离） */
+.l_body .article-header h1.title {
+  margin-top: 0.5rem !important;    /* 默认间距较大，这里改小 */
+  margin-bottom: 0.5rem !important; /* 调整标题下方的间距 */
+  line-height: 1.2 !important;      /* 稍微紧凑一点标题自身的行高 */
+}
