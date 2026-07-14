@@ -30,7 +30,8 @@
   white-space: nowrap;
   color: #ffffff;
   background: #656565;
-  padding: 4px 8px;
+  #padding: 4px 8px;
+  padding: 2px 4px;  
   border-radius: 4px;
   display: block;
   /* 始终保持显示，但使用 opacity 控制可见性 */

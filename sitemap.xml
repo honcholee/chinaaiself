@@ -17,60 +17,6 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/think/articles</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/wiki/think/examples</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/wiki/think/</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/wiki/think/releases</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/wiki/think/todo</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/wiki/why/articles</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://honcho.cc.cd/wiki/why/examples</loc>
     <lastmod>2026-07-14</lastmod>
     <changefreq>daily</changefreq>
@@ -106,26 +52,6 @@
   
   
   
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/explore/</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/friends/</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
   <url>
     <loc>https://honcho.cc.cd/page/</loc>
     <lastmod>2026-07-14</lastmod>
@@ -137,42 +63,6 @@
   
   <url>
     <loc>https://honcho.cc.cd/settings/</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/explore/explore/</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/explore/explore/index1</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/explore/site/</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/explore/tools/</loc>
     <lastmod>2026-07-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -235,7 +125,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/manager/%E7%AE%A1%E7%90%86%E5%AD%A6/%E5%A4%A7%E5%B8%88</loc>
+    <loc>https://honcho.cc.cd/wiki/think/articles</loc>
     <lastmod>2026-07-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -244,7 +134,108 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/about/</loc>
+    <loc>https://honcho.cc.cd/wiki/think/examples</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/think/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/think/releases</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/think/todo</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/why/articles</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/manager/%E7%AE%A1%E7%90%86%E5%AD%A6/%E5%A4%A7%E5%B8%88</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/explore/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/friends/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/explore/explore/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/explore/explore/index1</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/explore/site/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/explore/tools/</loc>
     <lastmod>2026-07-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -326,6 +317,15 @@
   
   <url>
     <loc>https://honcho.cc.cd/about/index-1</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/about/</loc>
     <lastmod>2026-07-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
