@@ -1071,7 +1071,7 @@
                         return result;
                     };
                     
-                    const groupedData = groupByYear([["2022-12-25",1],["2025-03-30",2],["2025-06-06",1],["2025-06-07",2],["2026-06-06",1],["2026-06-14",1]]);
+                    const groupedData = groupByYear([["2022-12-24",1],["2025-03-30",2],["2025-06-06",1],["2025-06-07",2],["2026-06-06",1],["2026-06-14",1]]);
                     const years = Object.keys(groupedData).reverse();
                     
                     var initYear = parseInt(heatmapChartDom.getAttribute('year')) || new Date().getFullYear();
