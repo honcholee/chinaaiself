@@ -11,7 +11,7 @@
   <rights>All rights reserved 2026, Honcho</rights>
   <subtitle>硬件 代码 生活 | honcho.cc.cd</subtitle>
   <title>honcho</title>
-  <updated>2026-07-15T08:25:19.355Z</updated>
+  <updated>2026-07-15T08:51:40.029Z</updated>
   <entry>
     <author>
       <name>Honcho</name>
@@ -28,7 +28,7 @@
       <![CDATA[<h1 id="一、打造零成本无限前缀的顶级域名邮箱系统"><a href="#一、打造零成本无限前缀的顶级域名邮箱系统" class="headerlink" title="一、打造零成本无限前缀的顶级域名邮箱系统"></a>一、打造零成本无限前缀的顶级域名邮箱系统</h1><]]>
     </summary>
     <title>打造零成本无限前缀的顶级域名邮箱系统</title>
-    <updated>2026-07-15T08:25:19.355Z</updated>
+    <updated>2026-07-15T08:51:40.029Z</updated>
   </entry>
   <entry>
     <author>
@@ -46,7 +46,7 @@
       <![CDATA[<h1 id="使用-Umami-官方的免费云服务（零基础，3分钟搞定）"><a href="#使用-Umami-官方的免费云服务（零基础，3分钟搞定）" class="headerlink" title="使用 Umami 官方的免费云服务（零基础，3分钟搞定）"></a>使用]]>
     </summary>
     <title>使用 Umami 官方的免费云服务</title>
-    <updated>2026-07-15T08:25:19.355Z</updated>
+    <updated>2026-07-15T08:51:40.029Z</updated>
   </entry>
   <entry>
     <author>
@@ -64,7 +64,7 @@
       <![CDATA[<h2 id="一、Hexo简介"><a href="#一、Hexo简介" class="headerlink" title="一、Hexo简介"></a>一、Hexo简介</h2><p>Hexo快速、简洁且高效的博客框架，属于静态网站，因为是开源的，所以官网有许多精致的主题供大]]>
     </summary>
     <title>Hexo博客的搭建与部署</title>
-    <updated>2026-07-15T08:25:19.355Z</updated>
+    <updated>2026-07-15T08:51:40.029Z</updated>
   </entry>
   <entry>
     <author>
@@ -82,7 +82,7 @@
       <![CDATA[<h2 id="iMac-2011-A1312-三个硬盘全速率接入方案"><a href="#iMac-2011-A1312-三个硬盘全速率接入方案" class="headerlink" title="iMac 2011 (A1312) 三个硬盘全速率接入方案"></a><st]]>
     </summary>
     <title>Imac 2011 安装硬盘</title>
-    <updated>2026-07-15T08:25:19.355Z</updated>
+    <updated>2026-07-15T08:51:40.029Z</updated>
   </entry>
   <entry>
     <author>
@@ -99,7 +99,7 @@
       <![CDATA[<h3 id="复制仓库"><a href="#复制仓库" class="headerlink" title="复制仓库"></a>复制仓库</h3><p>首先 <a href="https://github.com/wuzhengmao/twikoo-cloudflare/fo]]>
     </summary>
     <title>部署Twikoo</title>
-    <updated>2026-07-15T08:25:19.355Z</updated>
+    <updated>2026-07-15T08:51:40.029Z</updated>
   </entry>
   <entry>
     <author>
@@ -120,7 +120,7 @@
 <figure class="highl]]>
     </summary>
     <title>Docker使用过的命令</title>
-    <updated>2026-07-15T08:25:19.355Z</updated>
+    <updated>2026-07-15T08:51:40.028Z</updated>
   </entry>
   <entry>
     <author>
@@ -138,7 +138,7 @@
       <![CDATA[<h1 id="Docker-学习笔记"><a href="#Docker-学习笔记" class="headerlink" title="Docker 学习笔记"></a>Docker 学习笔记</h1><h2 id="第一章：镜像管理"><a href="#第一章：镜像管理"]]>
     </summary>
     <title>Docker学习笔记</title>
-    <updated>2026-07-15T08:25:19.355Z</updated>
+    <updated>2026-07-15T08:51:40.029Z</updated>
   </entry>
   <entry>
     <author>
@@ -156,6 +156,6 @@
       <![CDATA[<p>NAS搭建一个打印服务器 ，连接在没有无线打印功能的打印机上，实现PC和手机的无线打印。从网上查找资料，发现各种说法不太一致，经反复试验，终于成功安装HP多功能一体机，现总结如下：<br>首先打印机连接树莓派USB接口，开机。将树莓派内网IP地址设为固定地址。安装CUPS(]]>
     </summary>
     <title>搭建打印服务器</title>
-    <updated>2026-07-15T08:25:19.355Z</updated>
+    <updated>2026-07-15T08:51:40.029Z</updated>
   </entry>
 </feed>
