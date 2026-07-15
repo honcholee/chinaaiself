@@ -17,6 +17,42 @@
   
   
   <url>
+    <loc>https://honcho.cc.cd/wiki/why/examples</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/why/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/why/releases</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/wiki/why/todo</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
     <loc>https://honcho.cc.cd/social/stats/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>daily</changefreq>
@@ -99,42 +135,6 @@
   
   <url>
     <loc>https://honcho.cc.cd/wiki/why/articles</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/wiki/why/examples</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/wiki/why/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/wiki/why/releases</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/wiki/why/todo</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -325,7 +325,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/social/disclaimer/</loc>
+    <loc>https://honcho.cc.cd/social/policy/</loc>
     <lastmod>2025-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -334,7 +334,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/social/policy/</loc>
+    <loc>https://honcho.cc.cd/social/disclaimer/</loc>
     <lastmod>2025-10-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
