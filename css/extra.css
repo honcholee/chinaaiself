@@ -106,26 +106,38 @@ button:not(:disabled) {
   }
 }
 /* ==========================================
-   页面顶部大标题上下间距微调（直接修改）
-   ========================================== */
-.l_body .article-header h1.title,
-.article-header h1.title,
-.article h1.title {
-  margin-top: 2px !important;       /* 强行缩减大标题上边距 */
-  margin-bottom: 2px !important;    /* 强行缩减大标题下边距 */
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  line-height: 1.2 !important;
+   绝对覆盖版：缩减页面顶部大标题上下间距
+   ========================================= */
+
+/* 强制重置 header 容器的内边距 */
+header.article-header,
+.article-header,
+.post-header,
+.post header {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  margin-top: 0 !important;
+  margin-bottom: 5px !important;
 }
 
+/* 强制重置大标题自身的间距（不限 class 名，只要是 header 下的 h1 统统生效） */
+.article-header h1,
+header h1,
+.post-header h1,
+h1.title {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+  padding: 0 !important;
+  line-height: 1.1 !important;
+}
+
+/* 强制缩减面包屑和时间信息与标题的距离 */
 .article-header .bread-crumb,
 .article-header .meta-v3,
-.article-meta {
-  margin-bottom: 2px !important;    /* 缩减时间行与标题的距离 */
+.article-header .meta {
+  margin-bottom: 2px !important;
   padding-bottom: 0 !important;
 }
-/* ========================================== */
-
 
 /* 代码块样式 */
 html .hljs {
