@@ -111,8 +111,8 @@ button:not(:disabled) {
 .l_body .article-header h1.title,
 .article-header h1.title,
 .article h1.title {
-  margin-top: 4px !important;       /* 强行缩减大标题上边距 */
-  margin-bottom: 4px !important;    /* 强行缩减大标题下边距 */
+  margin-top: 2px !important;       /* 强行缩减大标题上边距 */
+  margin-bottom: 2px !important;    /* 强行缩减大标题下边距 */
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   line-height: 1.2 !important;
@@ -121,7 +121,7 @@ button:not(:disabled) {
 .article-header .bread-crumb,
 .article-header .meta-v3,
 .article-meta {
-  margin-bottom: 4px !important;    /* 缩减时间行与标题的距离 */
+  margin-bottom: 2px !important;    /* 缩减时间行与标题的距离 */
   padding-bottom: 0 !important;
 }
 /* ========================================== */
