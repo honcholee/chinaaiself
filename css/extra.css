@@ -105,6 +105,27 @@ button:not(:disabled) {
     --blur-px: 50px;
   }
 }
+/* ==========================================
+   页面顶部大标题上下间距微调（直接修改）
+   ========================================== */
+.l_body .article-header h1.title,
+.article-header h1.title,
+.article h1.title {
+  margin-top: 4px !important;       /* 强行缩减大标题上边距 */
+  margin-bottom: 4px !important;    /* 强行缩减大标题下边距 */
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1.2 !important;
+}
+
+.article-header .bread-crumb,
+.article-header .meta-v3,
+.article-meta {
+  margin-bottom: 4px !important;    /* 缩减时间行与标题的距离 */
+  padding-bottom: 0 !important;
+}
+/* ========================================== */
+
 
 /* 代码块样式 */
 html .hljs {
@@ -279,26 +300,3 @@ html[data-theme="light"] .hljs {
   background-color: #d7beb6
 }
 
-/* ==========================================
-   强力兼容版：缩减页面顶部大标题上下间距
-   ========================================== */
-
-/* 1. 针对 Stellar 主题中所有可能的大标题进行全覆盖 */
-.article .article-header h1,
-.article-header h1.title,
-#content h1.title,
-.post h1.title {
-  margin-top: 2px !important;       /* 强制缩减标题上边距 */
-  margin-bottom: 2px !important;    /* 强制缩减标题下边距 */
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  line-height: 1 !important;
-}
-
-/* 2. 缩减面包屑和时间区域的下边距（让它们离大标题更近） */
-.article-header .bread-crumb,
-.article-header .meta-v3,
-.article-meta {
-  margin-bottom: 2px !important;
-  padding-bottom: 0 !important;
-}
