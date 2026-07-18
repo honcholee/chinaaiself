@@ -26,7 +26,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/think/code</loc>
+    <loc>https://honcho.cc.cd/wiki/think/examples</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -35,7 +35,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/think/examples</loc>
+    <loc>https://honcho.cc.cd/wiki/think/code</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -62,7 +62,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/why/articles</loc>
+    <loc>https://honcho.cc.cd/wiki/think/releases</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -71,7 +71,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/think/releases</loc>
+    <loc>https://honcho.cc.cd/wiki/why/articles</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -98,7 +98,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/why/releases</loc>
+    <loc>https://honcho.cc.cd/wiki/why/todo</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -107,7 +107,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/why/todo</loc>
+    <loc>https://honcho.cc.cd/wiki/why/releases</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -163,7 +163,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/explore/explore/</loc>
+    <loc>https://honcho.cc.cd/explore/site/</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -173,15 +173,6 @@
   
   <url>
     <loc>https://honcho.cc.cd/explore/explore/index1</loc>
-    <lastmod>2026-07-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/explore/site/</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -217,15 +208,6 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/social/update/</loc>
-    <lastmod>2026-07-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://honcho.cc.cd/wiki/manager/</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
@@ -235,7 +217,16 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/about/</loc>
+    <loc>https://honcho.cc.cd/social/update/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/explore/explore/</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -280,15 +271,6 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/posts/%E5%85%8D%E8%B4%B9%E7%BD%91%E7%AB%99%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1</loc>
-    <lastmod>2026-07-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
     <loc>https://honcho.cc.cd/posts/cloud%20mail</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
@@ -298,7 +280,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/posts/%E9%83%A8%E7%BD%B2Twikoo</loc>
+    <loc>https://honcho.cc.cd/posts/%E5%85%8D%E8%B4%B9%E7%BD%91%E7%AB%99%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -316,7 +298,25 @@
   
   
   <url>
+    <loc>https://honcho.cc.cd/posts/%E9%83%A8%E7%BD%B2Twikoo</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
     <loc>https://honcho.cc.cd/about/index-1</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://honcho.cc.cd/about/</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
