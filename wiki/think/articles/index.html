@@ -26,6 +26,7 @@
 
   
   <meta name="description" content="
+
     
         
             得分: 0 分
@@ -34,9 +35,10 @@
         
         
     
-
-&lt;div id=&quot;control-deck&quot;&gt;
-  ...">
+    
+        🛸 智能跨学段充能中心
+        
+       ...">
   
   <meta name="keywords" content="hexo, strellar, honcho, AI, china, Imac, A1312, CSS, JavaScript, Python, 生活">
 
@@ -58,7 +60,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Website","@id":"https://honcho.cc.cd/wiki/think/articles","author":{"@type":"Person","name":"Honcho","sameAs":[],"image":"https://honcho.cc.cd/assets/honcho.jpeg"},"name":"学古诗打枪击","description":"\n    \n        \n            得分: 0 分\n            弹药: 10 / 10 ⚡\n            1-2年级起步\n        \n        \n    \n\n&lt;div id=&quot;control-deck&quot;&gt;\n    &lt;h3 class=&quot;panel-title&quot;&gt;🛸 智能跨学段...","url":"https://honcho.cc.cd/wiki/think/articles","keywords":"hexo, strellar, honcho, AI, china, Imac, A1312, CSS, JavaScript, Python, 生活"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Website","@id":"https://honcho.cc.cd/wiki/think/articles","author":{"@type":"Person","name":"Honcho","sameAs":[],"image":"https://honcho.cc.cd/assets/honcho.jpeg"},"name":"学古诗打枪击","description":"\n\n    \n        \n            得分: 0 分\n            弹药: 10 / 10 ⚡\n            1-2年级起步\n        \n        \n    \n    \n        🛸 智能跨学段充能中心\n        \n            加载中...\n            \n            请按顺序默写全诗进行充能：...","url":"https://honcho.cc.cd/wiki/think/articles","keywords":"hexo, strellar, honcho, AI, china, Imac, A1312, CSS, JavaScript, Python, 生活"}</script>
   <link rel="stylesheet" href="/css/extra.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css"/><script defer src="https://cloud.umami.is/script.js" data-website-id="e9fddf86-1a6f-4bea-836e-6703bb9b88fd"></script><script defer src="https://umami-opal-one.vercel.app/script.js" data-website-id="ff4e8e47-8c77-42b5-8006-9f08b6dd9079"></script><link rel="canonical" href="./">
 </head>
 <body><div id="l_cover"></div><div class="l_body content" id="start" layout="page" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
@@ -92,7 +94,7 @@
   <span class="sep"></span>
   <a class="cap breadcrumb" href="/wiki/think/articles/">学古诗打枪击</a>
   </div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-07-19T05:00:00.000Z">2026-07-19</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-07-19T05:09:05.803Z">2026-07-19</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-07-19T05:00:00.000Z">2026-07-19</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-07-19T05:18:42.402Z">2026-07-19</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -103,7 +105,8 @@
     </div>
     
   </div>
-  </div><article class="md-text content"><div id="game-playground">
+  </div><article class="md-text content">
+<div id="game-playground">
     <div id="battle-deck">
         <div id="hud-display">
             <div>得分: <span id="scr-val">0</span> 分</div>
@@ -112,32 +115,27 @@
         </div>
         <canvas id="gameCanvas"></canvas>
     </div>
-
-<pre><code>&lt;div id=&quot;control-deck&quot;&gt;
-    &lt;h3 class=&quot;panel-title&quot;&gt;🛸 智能跨学段充能中心&lt;/h3&gt;
-    &lt;div class=&quot;poem-display-card&quot;&gt;
-        &lt;h4 id=&quot;poem-title-text&quot;&gt;加载中...&lt;/h4&gt;
-        &lt;p id=&quot;poem-author-text&quot;&gt;&lt;/p&gt;
-        &lt;p class=&quot;poem-tip&quot;&gt;请按顺序默写全诗进行充能：&lt;/p&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;input-area&quot;&gt;
-        &lt;input type=&quot;text&quot; id=&quot;poem-text-input&quot; placeholder=&quot;输入全诗（不含标点，错字会扣分）...&quot; autocomplete=&quot;off&quot;&gt;
-        &lt;button id=&quot;submit-charge-btn&quot;&gt;向云端提交验证&lt;/button&gt;
-        &lt;p id=&quot;api-feedback-msg&quot;&gt;&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id=&quot;game-over-screen&quot;&gt;
-    &lt;h1 class=&quot;go-title&quot;&gt;防线失守！&lt;/h1&gt;
-    &lt;p class=&quot;go-desc&quot;&gt;最终斩获积分: &lt;span id=&quot;final-score-val&quot;&gt;0&lt;/span&gt; 分&lt;/p&gt;
-    &lt;button class=&quot;restart-game-btn&quot; onclick=&quot;initAndStartGame()&quot;&gt;不服气，再来！&lt;/button&gt;
-&lt;/div&gt;
-</code></pre>
+    <div id="control-deck">
+        <h3 class="panel-title">🛸 智能跨学段充能中心</h3>
+        <div class="poem-display-card">
+            <h4 id="poem-title-text">加载中...</h4>
+            <p id="poem-author-text"></p>
+            <p class="poem-tip">请按顺序默写全诗进行充能：</p>
+        </div>
+        <div class="input-area">
+            <input type="text" id="poem-text-input" placeholder="输入全诗（不含标点，错字会扣分）..." autocomplete="off">
+            <button id="submit-charge-btn">向云端提交验证</button>
+            <p id="api-feedback-msg"></p>
+        </div>
+    </div>
+    <div id="game-over-screen">
+        <h1 class="go-title">防线失守！</h1>
+        <p class="go-desc">最终斩获积分: <span id="final-score-val">0</span> 分</p>
+        <button class="restart-game-btn" onclick="initAndStartGame()">不服气，再来！</button>
+    </div>
 </div>
 
 <style>
-/* 针对 Hexo Stellar 深度定制的局部容器样式，不污染全局 */
 #game-playground {
     display: flex;
     width: 100%;
@@ -152,20 +150,17 @@
     overflow: hidden;
     font-family: inherit;
 }
-
 #battle-deck {
     width: 65%;
     height: 100%;
     background: linear-gradient(to bottom, #0f172a, #1e293b, #334155);
     position: relative;
 }
-
 #gameCanvas {
     width: 100%;
     height: 100%;
     display: block;
 }
-
 #control-deck {
     width: 35%;
     height: 100%;
@@ -177,7 +172,6 @@
     justify-content: space-between;
     box-sizing: border-box;
 }
-
 #hud-display {
     position: absolute;
     top: 15px;
@@ -192,30 +186,25 @@
 #scr-val { color: #4ade80; font-size: 22px; }
 #ammo-val { color: #facc15; font-size: 22px; }
 #badge-wrapper { margin-top: 5px; }
-
 .badge-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; color: #fff; }
 .lvl-1 { background: #22c55e; } 
 .lvl-2 { background: #f97316; } 
 .lvl-3 { background: #ec4899; }
-
 .panel-title { color: var(--text-p1); text-align: center; font-size: 18px; margin: 0 0 10px 0; border: none; padding: 0; }
 .poem-display-card { background: var(--block); border: 2px solid var(--text-p4); border-radius: 8px; padding: 15px; text-align: center; }
 #poem-title-text { color: #ef4444; font-size: 18px; margin: 0; }
 #poem-author-text { font-size: 13px; color: var(--text-p3); margin: 5px 0; }
 .poem-tip { font-size: 12px; color: var(--text-p2); font-weight: bold; margin-top: 8px; }
-
 #poem-text-input { width: 100%; padding: 12px; font-size: 14px; border: 2px solid var(--text-p4); background: var(--card); color: var(--text-p1); border-radius: 6px; text-align: center; margin-bottom: 10px; box-sizing: border-box; }
 #submit-charge-btn { background: #334155; color: white; border: none; padding: 12px; font-size: 15px; font-weight: bold; border-radius: 6px; cursor: pointer; width: 100%; transition: background 0.2s; }
 #submit-charge-btn:hover { background: #1e293b; }
 #api-feedback-msg { text-align: center; font-size: 13px; font-weight: bold; margin-top: 8px; min-height: 18px; }
-
 #game-over-screen { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15,23,42,0.95); display: none; flex-direction: column; justify-content: center; align-items: center; color: white; z-index: 100; }
 .go-title { font-size: 36px; color: #f43f5e; margin: 0 0 10px 0; }
 .go-desc { font-size: 20px; margin-bottom: 20px; }
 #final-score-val { color: #4ade80; }
 .restart-game-btn { padding: 10px 24px; font-size: 16px; font-weight: bold; cursor: pointer; border-radius: 6px; border: none; background: #4ade80; color: #0f172a; }
 
-/* 移动端全触屏体验优化 */
 @media screen and (max-width: 768px) {
     #game-playground { flex-direction: column; height: auto; }
     #battle-deck { width: 100%; height: 350px; }
@@ -225,7 +214,7 @@
 
 <script>
 // ⚠️ 记得在这里换上你真实的 Cloudflare Worker 域名
-const WORKER_API_URL = "https://shotgame.jicheng-xu.workers.dev"; 
+const WORKER_API_URL = "https://poetry-verify.xxxx.workers.dev"; 
 
 let canvas, ctx, canvasW, canvasH;
 let score = 0, ammo = 10, gameActive = false;
@@ -235,9 +224,9 @@ let spawnIntervalId = null, animationFrameId = null;
 
 function initAndStartGame() {
     canvas = document.getElementById('gameCanvas');
+    if(!canvas) return;
     ctx = canvas.getContext('2d');
     
-    // 处理高清屏模糊问题
     const dpr = window.devicePixelRatio || 1;
     const rect = canvas.getBoundingClientRect();
     canvas.width = rect.width * dpr;
@@ -249,7 +238,6 @@ function initAndStartGame() {
     playerX = canvasW / 2;
     playerY = canvasH - 35;
     
-    // 重置状态
     score = 0; ammo = 10; bullets = []; enemies = [];
     document.getElementById('scr-val').innerText = score;
     document.getElementById('ammo-val').innerText = ammo;
@@ -257,7 +245,6 @@ function initAndStartGame() {
     document.getElementById('poem-text-input').value = '';
     document.getElementById('api-feedback-msg').innerText = '';
 
-    // 绑定事件（兼容PC鼠标与手机触控）
     canvas.removeEventListener('mousemove', handleMouseMove);
     canvas.removeEventListener('click', handleFire);
     canvas.removeEventListener('touchstart', handleTouch);
@@ -290,7 +277,7 @@ function handleTouch(e) {
     const rect = canvas.getBoundingClientRect();
     const touch = e.touches[0];
     playerX = Math.max(15, Math.min(touch.clientX - rect.left, canvasW - 15));
-    handleFire(); // 触屏瞬移加同时开火
+    handleFire();
 }
 
 async function fetchPoemData() {
@@ -319,7 +306,6 @@ async function fetchPoemData() {
 function startEnemySpawning() {
     if(spawnIntervalId) clearInterval(spawnIntervalId);
     
-    // 动态控制生成速度
     const spawnRate = Math.max(1300, 3200 - score * 6);
     spawnIntervalId = setInterval(() => {
         if (!gameActive || !currentPoemData) return;
@@ -338,7 +324,6 @@ function startEnemySpawning() {
     }, spawnRate);
 }
 
-// 监听验证按钮
 document.getElementById('submit-charge-btn').addEventListener('click', async () => {
     const inputField = document.getElementById('poem-text-input');
     const msgField = document.getElementById('api-feedback-msg');
@@ -361,7 +346,7 @@ document.getElementById('submit-charge-btn').addEventListener('click', async () 
             document.getElementById('ammo-val').innerText = ammo;
             msgField.style.color = "#22c55e";
             inputField.value = "";
-            fetchPoemData(); // 成功充能立即同步切歌
+            fetchPoemData();
         } else {
             msgField.style.color = "#ef4444";
         }
@@ -375,12 +360,10 @@ function renderLoop() {
     if (!gameActive) return;
     ctx.clearRect(0, 0, canvasW, canvasH);
 
-    // 1. 绘制战机 (大熊猫 🐼)
     ctx.font = "26px Arial";
     ctx.textAlign = "center";
     ctx.fillText("🐼", playerX, playerY + 8);
 
-    // 2. 更新与绘制子弹
     ctx.fillStyle = "#facc15";
     for (let i = bullets.length - 1; i >= 0; i--) {
         let b = bullets[i];
@@ -389,12 +372,10 @@ function renderLoop() {
         if (b.y < 0) bullets.splice(i, 1);
     }
 
-    // 3. 更新与绘制掉落词条
     for (let i = enemies.length - 1; i >= 0; i--) {
         let e = enemies[i];
         e.y += e.speed;
 
-        // 标靶背景框
         ctx.fillStyle = "rgba(255, 255, 255, 0.95)";
         ctx.strokeStyle = "#475569";
         ctx.lineWidth = 1.5;
@@ -402,18 +383,16 @@ function renderLoop() {
         if(ctx.roundRect) {
             ctx.roundRect(e.x, e.y, 140, 28, 6);
         } else {
-            ctx.rect(e.x, e.y, 140, 28); // 兼容老旧浏览器
+            ctx.rect(e.x, e.y, 140, 28);
         }
         ctx.fill();
         ctx.stroke();
 
-        // 标靶文本
         ctx.fillStyle = "#0f172a";
         ctx.font = "bold 13px sans-serif";
         ctx.textAlign = "left";
         ctx.fillText(e.text, e.x + 8, e.y + 18);
 
-        // 防线沉底判定（漏掉正确的古诗直接GameOver）
         if (e.y > canvasH - 15) {
             if (e.isCorrect) {
                 gameActive = false;
@@ -427,7 +406,6 @@ function renderLoop() {
             }
         }
 
-        // 碰撞交叉验证 (击中判定)
         for (let j = bullets.length - 1; j >= 0; j--) {
             let b = bullets[j];
             if (b.x > e.x && b.x < e.x + 140 && b.y > e.y && b.y < e.y + 28) {
@@ -436,10 +414,9 @@ function renderLoop() {
                 
                 if (e.isCorrect) {
                     score += 10;
-                    // 分数上涨可能伴随怪物提速，在这里重新平衡生成速率
                     if (score % 40 === 0) startEnemySpawning(); 
                 } else {
-                    score = Math.max(0, score - 20); // 惩罚机制
+                    score = Math.max(0, score - 20);
                 }
                 document.getElementById('scr-val').innerText = score;
                 break;
@@ -450,15 +427,14 @@ function renderLoop() {
     animationFrameId = requestAnimationFrame(renderLoop);
 }
 
-// 自动优雅启动
 document.addEventListener("DOMContentLoaded", () => {
     initAndStartGame();
 });
-// 针对 Hexo 异步加载或者 PJAX 切换页面的兼容性执行
 setTimeout(() => {
     if(!gameActive) initAndStartGame();
 }, 600);
 </script>
+
 </article>
 
   <div class="related-wrap md-text" id="comments">
