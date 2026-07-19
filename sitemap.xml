@@ -107,7 +107,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/why/releases</loc>
+    <loc>https://honcho.cc.cd/wiki/why/todo</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -116,7 +116,7 @@
   
   
   <url>
-    <loc>https://honcho.cc.cd/wiki/why/todo</loc>
+    <loc>https://honcho.cc.cd/wiki/why/releases</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -172,6 +172,15 @@
   
   
   <url>
+    <loc>https://honcho.cc.cd/explore/explore/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  
+  <url>
     <loc>https://honcho.cc.cd/explore/explore/index1</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>daily</changefreq>
@@ -218,15 +227,6 @@
   
   <url>
     <loc>https://honcho.cc.cd/social/update/</loc>
-    <lastmod>2026-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://honcho.cc.cd/explore/explore/</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
