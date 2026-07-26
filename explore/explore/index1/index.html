@@ -76,7 +76,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">文档</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/explore/bookmark/">探索</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2026-07-24T03:06:02.163Z">2026-07-24</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2026-07-26T08:56:19.010Z">2026-07-26</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -101,6 +101,9 @@
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p> 打开start.sh然后配置几个文件<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"> ///以下三个可以不修改</span><br><span class="line">ARGO_TOKEN=&quot;&quot;</span><br><span class="line">ARGO_DOMAIN=&quot;&quot;</span><br><span class="line">ALLOW_TEMP_TUNNEL=&quot;1&quot;</span><br><span class="line">//UUID建议修改</span><br><span class="line">UUID=&quot;ea6ddf86-c4b4-4215-b3d8-e44c9dca0ed8&quot;</span><br><span class="line">VPATH=&quot;vls&quot;</span><br><span class="line">XRAY_PORT=&quot;8080&quot;</span><br><span class="line"></span><br><span class="line"># Optional Cloudflare preferred IP/domain used as VLESS Address.</span><br><span class="line"># Host/SNI will still be the real Argo domain.</span><br><span class="line">//建议不修改</span><br><span class="line">CF_PREFERRED=&quot;mfa.gov.ua&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
 <div class="tag-plugin colorful folders" ><details class="folder" index="0"><summary><p>修改指南</p>
 </summary><div class="body"><div class="tag-plugin colorful note" ><div class="body"><p>KataBump 虽然会给容器分配访问入口，但如果想让访问更稳定、更好记，Cloudflare Tunnel 会更方便。</p><p>我的方案里支持两种模式。</p><p>方案 A：临时 trycloudflare 隧道<br>默认情况下，可以不配置固定 Tunnel，直接使用 Cloudflare 的临时域名：<br><a target="_blank" rel="noopener" href="https://xxxx.trycloudflare.com/">https://xxxx.trycloudflare.com</a><br>优点是简单，不需要提前准备域名，也不用复杂配置。<br>缺点是临时域名可能变化，不适合长期固定使用。</p><p>方案 B：固定 Cloudflare Tunnel<br>如果你有自己的 Cloudflare 域名，可以使用固定 Tunnel。<br>这样可以把服务绑定到自己的域名上，例如：<br>node.yourdomain.com<br>这种方式更适合长期使用，也更方便做订阅地址和面板入口。</p><p>- </p></div></div></div></details></div>
+
+<p>运行命令：node &#x2F;home&#x2F;container&#x2F;index.js</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node /home/container/index.js</span><br></pre></td></tr></table></figure>
 
 <h2 id="每4天更新"><a href="#每4天更新" class="headerlink" title="每4天更新"></a>每4天更新</h2><ul>
 <li>fork <a target="_blank" rel="noopener" href="https://github.com/illria/katabump-renew">https://github.com/illria/katabump-renew</a> 链接的代码</li>
